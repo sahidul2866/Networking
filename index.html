@@ -1,0 +1,65 @@
+<html>
+<title> CD Store </title>
+<head>
+    <title></title>
+    <style>
+        body {
+            background-color: #944dff
+        }
+    </style>
+</head>
+
+<body>
+<h1 style = "font-family:georgia,garamond,serif;font-size:50px;font-style:italic;color:#404040" align = "Center"> Media Store </h1>
+<p style = "font-family:georgia,garamond,serif;font-size:20px;"> Welcome to our strore. We would like to announce that we have brand new products which are trending worldwide. List of those products are given below.</p>
+
+<ol>
+    <caption><b>Latest Releases: 		</caption>
+    <li>Golden Collection of 90's	Price:40 BDT	<button class="open-button" onclick="openForm()">Buy It!</button></button></li>
+    <li>Piano Lessons	Price:100 BDT				<button class="open-button" onclick="openForm()">Buy It!</button></button></li>
+    <li>Learn C the hard way.(Part 1)  Price: 120 BDT	<button class="open-button" onclick="openForm()">Buy It!</button></button></b></li>
+</ol>
+
+<h1>Please fillup your credit informations</h1>
+<div class="form-popup" id="myForm">
+    <form method="post" action="">
+
+
+        <label for="nam"><b>Name			:</b></label>
+        <input type="text" placeholder="Enter Name" name="nam" id="namm" required><br>
+
+        <label for="fam"><b>Family			:</b></label>
+        <input type="text" placeholder="Enter Family" name="fam" id="famm" required><br>
+
+        <label for="post"><b>Post Code		:</b></label>
+        <input type="number" placeholder="Enter Post Code" name="post" required><br>
+
+        <label for="creno"><b>Credit Card	:</b></label>
+        <input type="number" placeholder="Enter Credit Card" name="creno" required><br>
+
+        <label for="itemno"><b>Item Number			:</b></label>
+        <input type="number" placeholder="Item Number" name="itemno" required><br>
+
+        <label for="qun"><b>Quantity			:</b></label>
+        <input type="number" placeholder="Enter Quantity" name="qun" required><br>
+
+        <button type="submit" >Submit</button>
+
+    </form>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</div>
+
+
+<script>
+
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</body>
+
+
+</html>
